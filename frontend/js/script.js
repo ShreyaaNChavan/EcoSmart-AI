@@ -1,7 +1,7 @@
 /* ================================
    BACKEND API URL
 ================================ */
-const API_BASE = "https://YOUR-RENDER-URL.onrender.com";
+const API_BASE = "https://ecosmart-ai.onrender.com";
 
 /* ================================
    TAB SWITCHING

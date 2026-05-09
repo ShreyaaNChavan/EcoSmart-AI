@@ -1,0 +1,4 @@
+import joblib
+
+joblib.dump(model, "noise_health_model.pkl")
+print("✅ Model saved successfully")

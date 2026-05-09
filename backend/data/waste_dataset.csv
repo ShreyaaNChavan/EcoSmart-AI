@@ -1,0 +1,74 @@
+item,category,description,impact,disposal_methods
+Banana Peel,wet,Biodegradable fruit skin,Attracts pests and produces methane,Compost;Use as fertilizer;Vermicompost
+Apple Core,wet,Organic fruit waste,Methane production in landfill,Compost;Feed animals;Worm bin
+Orange Peel,wet,Citrus fruit skin,Slow decomposition in mixed waste,Compost;Natural cleaner;Dry reuse
+Watermelon Rind,wet,Thick fruit skin,Takes landfill space,Compost;Cook reuse;Biogas
+Mango Peel,wet,Tropical fruit skin,Attracts flies if unmanaged,Compost;Animal feed;Vermicompost
+Potato Peel,wet,Vegetable skin,Methane emission,Compost;Reuse cooking;Vermicompost
+Carrot Peel,wet,Root vegetable skin,Adds to food waste volume,Compost;Vegetable stock;Animal feed
+Onion Skin,wet,Dry vegetable layer,Slow decomposition,Compost;Natural dye;Stock
+Tomato,wet,Overripe fruit,Attracts pests,Compost;Garden burial;Worm farm
+Lettuce Leaves,wet,Wilted greens,Methane in landfill,Compost;Animal feed;Vermicompost
+Spinach,wet,Spoiled leafy greens,Leachate contamination,Compost;Mulch;Bokashi
+Broccoli Stalks,wet,Vegetable stems,Nutrient waste,Compost;Cook reuse;Vermicompost
+Coffee Grounds,wet,Used coffee waste,Acidifies landfill,Compost;Fertilizer;Deodorizer
+Tea Leaves,wet,Used tea residue,Methane emission,Compost;Mulch;Vermicompost
+Bread Stale,wet,Old bread,Attracts rodents,Compost;Breadcrumb reuse;Animal feed
+Rice Leftover,wet,Cooked rice waste,Odor and fermentation,Compost;Bokashi;Animal feed
+Pasta Leftover,wet,Cooked pasta,Attracts pests,Compost;Bokashi;Garden burial
+Cooked Vegetables,wet,Food leftovers,Methane emission,Compost;Bokashi;Biogas
+Eggshells,wet,Calcium-rich shells,Slow decomposition,Crush and compost;Soil additive;Vermicompost
+Grass Clippings,wet,Garden waste,Methane if bagged,Compost;Mulch;Leave on lawn
+Fallen Leaves,wet,Dry leaves,Methane in landfill,Compost;Leaf mold;Mulch
+Hair Clippings,wet,Human/pet hair,Slow decomposition,Compost;Mulch;Reuse
+Flowers Wilted,wet,Dead plants,Biomass waste,Compost;Dry reuse;Mulch
+Newspaper,dry,Printed paper,Tree waste if not recycled,Recycle;Reuse;Compost shredded
+Magazine,dry,Glossy paper,Slow recycling,Recycle;Donate;Craft reuse
+Cardboard Box,dry,Packaging material,Landfill bulk,Recycle;Reuse;Compost shredded
+Office Paper,dry,Printed sheets,Tree waste,Recycle;Reuse;Compost
+Plastic Bottle PET,dry,Drink bottle,Long decomposition,Recycle;Reuse;Return deposit
+Plastic Bottle HDPE,dry,Opaque bottle,Plastic pollution,Recycle;Reuse;Return
+Plastic Bag,dry,Carry bag,Marine pollution,Recycle;Reuse;Avoid
+Aluminum Can,dry,Drink can,Energy waste,Recycle;Reuse;Return
+Tin Can,dry,Food container,Rust and pollution,Recycle;Reuse;Scrap
+Glass Bottle,dry,Glass container,Non-biodegradable,Recycle;Reuse
+Glass Jar,dry,Storage container,Wasted recyclable material,Recycle;Reuse
+Clothing,dry,Textile waste,Landfill overflow,Donate;Reuse;Recycle
+Jeans,dry,Denim clothing,Slow decomposition,Donate;Recycle;Upcycle
+Shoes,dry,Footwear waste,Slow decay,Donate;Reuse;Recycle
+Book,dry,Paper material,Tree waste,Donate;Reuse;Recycle
+Paper Cup,dry,Disposable cup,Plastic lining issue,Special recycle;Avoid;Reuse
+Envelope,dry,Mail paper,Waste accumulation,Recycle;Reuse
+Gift Wrap,dry,Wrapping paper,Single-use waste,Recycle;Reuse
+CD DVD,dry,Plastic disc,Non-biodegradable,E-waste;Reuse;Recycle
+Umbrella,dry,Mixed material waste,Difficult recycling,Separate parts;Recycle;Waste
+Battery AA,hazardous,Household battery,Toxic leakage,Battery recycling;Drop-off
+Battery AAA,hazardous,Small battery,Chemical pollution,Recycle;Store safely
+Battery 9V,hazardous,Power battery,Fire hazard,Recycle;Tape terminals
+Paint Oil-Based,hazardous,Chemical paint,Toxic fumes,Hazardous disposal
+Motor Oil,hazardous,Engine oil,Severe pollution,Auto shop recycle
+Bleach,hazardous,Cleaning chemical,Toxic fumes,Hazardous disposal
+Pesticide,hazardous,Chemical poison,Soil contamination,Hazardous disposal
+Thermometer Mercury,hazardous,Mercury device,Severe toxicity,Hazardous facility
+CFL Bulb,hazardous,Fluorescent light,Mercury release,Recycle properly
+Expired Medicine,hazardous,Pharmaceutical waste,Water contamination,Pharmacy return
+Aerosol Can,hazardous,Pressurized container,Explosion risk,Hazardous disposal
+Mobile Phone,ewaste,Electronic device,Heavy metal pollution,E-waste recycling
+Laptop,ewaste,Computer device,Toxic components,E-waste recycling
+Desktop Computer,ewaste,Computer system,Heavy metals,E-waste recycling
+Monitor LCD,ewaste,Display device,Mercury risk,E-waste recycling
+Television LED,ewaste,TV device,Plastic and metal waste,E-waste recycling
+Printer,ewaste,Office device,Ink and plastic waste,E-waste recycling
+Keyboard,ewaste,Input device,Plastic waste,E-waste recycling
+Mouse,ewaste,Input device,Electronic waste,E-waste recycling
+Speaker,ewaste,Audio device,Battery waste,E-waste recycling
+Headphones,ewaste,Audio accessory,Plastic waste,E-waste recycling
+Charger,ewaste,Charging cable,Electronic waste,E-waste recycling
+Router,ewaste,Networking device,E-waste pollution,E-waste recycling
+Game Console,ewaste,Gaming device,Mixed materials,E-waste recycling
+Smartwatch,ewaste,Wearable device,Battery waste,E-waste recycling
+Camera,ewaste,Digital device,Toxic waste,E-waste recycling
+Microwave,ewaste,Appliance,Electronic waste,E-waste recycling
+Refrigerator,ewaste,Appliance,Gas pollution,Authorized recycler
+Air Conditioner,ewaste,Cooling device,Harmful gases,HVAC recycling
+Washing Machine,ewaste,Appliance,Metal/plastic waste,Appliance recycler

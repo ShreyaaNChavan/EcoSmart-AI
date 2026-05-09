@@ -1,0 +1,74 @@
+item,category,description,impact,disposal_methods,item_clean
+Banana Peel,wet,Biodegradable fruit skin,Attracts pests and produces methane,Compost;Use as fertilizer;Vermicompost,banana peel
+Apple Core,wet,Organic fruit waste,Methane production in landfill,Compost;Feed animals;Worm bin,apple core
+Orange Peel,wet,Citrus fruit skin,Slow decomposition in mixed waste,Compost;Natural cleaner;Dry reuse,orange peel
+Watermelon Rind,wet,Thick fruit skin,Takes landfill space,Compost;Cook reuse;Biogas,watermelon rind
+Mango Peel,wet,Tropical fruit skin,Attracts flies if unmanaged,Compost;Animal feed;Vermicompost,mango peel
+Potato Peel,wet,Vegetable skin,Methane emission,Compost;Reuse cooking;Vermicompost,potato peel
+Carrot Peel,wet,Root vegetable skin,Adds to food waste volume,Compost;Vegetable stock;Animal feed,carrot peel
+Onion Skin,wet,Dry vegetable layer,Slow decomposition,Compost;Natural dye;Stock,onion skin
+Tomato,wet,Overripe fruit,Attracts pests,Compost;Garden burial;Worm farm,tomato
+Lettuce Leaves,wet,Wilted greens,Methane in landfill,Compost;Animal feed;Vermicompost,lettuce leaves
+Spinach,wet,Spoiled leafy greens,Leachate contamination,Compost;Mulch;Bokashi,spinach
+Broccoli Stalks,wet,Vegetable stems,Nutrient waste,Compost;Cook reuse;Vermicompost,broccoli stalks
+Coffee Grounds,wet,Used coffee waste,Acidifies landfill,Compost;Fertilizer;Deodorizer,coffee grounds
+Tea Leaves,wet,Used tea residue,Methane emission,Compost;Mulch;Vermicompost,tea leaves
+Bread Stale,wet,Old bread,Attracts rodents,Compost;Breadcrumb reuse;Animal feed,bread stale
+Rice Leftover,wet,Cooked rice waste,Odor and fermentation,Compost;Bokashi;Animal feed,rice leftover
+Pasta Leftover,wet,Cooked pasta,Attracts pests,Compost;Bokashi;Garden burial,pasta leftover
+Cooked Vegetables,wet,Food leftovers,Methane emission,Compost;Bokashi;Biogas,cooked vegetables
+Eggshells,wet,Calcium-rich shells,Slow decomposition,Crush and compost;Soil additive;Vermicompost,eggshells
+Grass Clippings,wet,Garden waste,Methane if bagged,Compost;Mulch;Leave on lawn,grass clippings
+Fallen Leaves,wet,Dry leaves,Methane in landfill,Compost;Leaf mold;Mulch,fallen leaves
+Hair Clippings,wet,Human/pet hair,Slow decomposition,Compost;Mulch;Reuse,hair clippings
+Flowers Wilted,wet,Dead plants,Biomass waste,Compost;Dry reuse;Mulch,flowers wilted
+Newspaper,dry,Printed paper,Tree waste if not recycled,Recycle;Reuse;Compost shredded,newspaper
+Magazine,dry,Glossy paper,Slow recycling,Recycle;Donate;Craft reuse,magazine
+Cardboard Box,dry,Packaging material,Landfill bulk,Recycle;Reuse;Compost shredded,cardboard box
+Office Paper,dry,Printed sheets,Tree waste,Recycle;Reuse;Compost,office paper
+Plastic Bottle PET,dry,Drink bottle,Long decomposition,Recycle;Reuse;Return deposit,plastic bottle pet
+Plastic Bottle HDPE,dry,Opaque bottle,Plastic pollution,Recycle;Reuse;Return,plastic bottle hdpe
+Plastic Bag,dry,Carry bag,Marine pollution,Recycle;Reuse;Avoid,plastic bag
+Aluminum Can,dry,Drink can,Energy waste,Recycle;Reuse;Return,aluminum can
+Tin Can,dry,Food container,Rust and pollution,Recycle;Reuse;Scrap,tin can
+Glass Bottle,dry,Glass container,Non-biodegradable,Recycle;Reuse,glass bottle
+Glass Jar,dry,Storage container,Wasted recyclable material,Recycle;Reuse,glass jar
+Clothing,dry,Textile waste,Landfill overflow,Donate;Reuse;Recycle,clothing
+Jeans,dry,Denim clothing,Slow decomposition,Donate;Recycle;Upcycle,jeans
+Shoes,dry,Footwear waste,Slow decay,Donate;Reuse;Recycle,shoes
+Book,dry,Paper material,Tree waste,Donate;Reuse;Recycle,book
+Paper Cup,dry,Disposable cup,Plastic lining issue,Special recycle;Avoid;Reuse,paper cup
+Envelope,dry,Mail paper,Waste accumulation,Recycle;Reuse,envelope
+Gift Wrap,dry,Wrapping paper,Single-use waste,Recycle;Reuse,gift wrap
+CD DVD,dry,Plastic disc,Non-biodegradable,E-waste;Reuse;Recycle,cd dvd
+Umbrella,dry,Mixed material waste,Difficult recycling,Separate parts;Recycle;Waste,umbrella
+Battery AA,hazardous,Household battery,Toxic leakage,Battery recycling;Drop-off,battery aa
+Battery AAA,hazardous,Small battery,Chemical pollution,Recycle;Store safely,battery aaa
+Battery 9V,hazardous,Power battery,Fire hazard,Recycle;Tape terminals,battery 9v
+Paint Oil-Based,hazardous,Chemical paint,Toxic fumes,Hazardous disposal,paint oil-based
+Motor Oil,hazardous,Engine oil,Severe pollution,Auto shop recycle,motor oil
+Bleach,hazardous,Cleaning chemical,Toxic fumes,Hazardous disposal,bleach
+Pesticide,hazardous,Chemical poison,Soil contamination,Hazardous disposal,pesticide
+Thermometer Mercury,hazardous,Mercury device,Severe toxicity,Hazardous facility,thermometer mercury
+CFL Bulb,hazardous,Fluorescent light,Mercury release,Recycle properly,cfl bulb
+Expired Medicine,hazardous,Pharmaceutical waste,Water contamination,Pharmacy return,expired medicine
+Aerosol Can,hazardous,Pressurized container,Explosion risk,Hazardous disposal,aerosol can
+Mobile Phone,ewaste,Electronic device,Heavy metal pollution,E-waste recycling,mobile phone
+Laptop,ewaste,Computer device,Toxic components,E-waste recycling,laptop
+Desktop Computer,ewaste,Computer system,Heavy metals,E-waste recycling,desktop computer
+Monitor LCD,ewaste,Display device,Mercury risk,E-waste recycling,monitor lcd
+Television LED,ewaste,TV device,Plastic and metal waste,E-waste recycling,television led
+Printer,ewaste,Office device,Ink and plastic waste,E-waste recycling,printer
+Keyboard,ewaste,Input device,Plastic waste,E-waste recycling,keyboard
+Mouse,ewaste,Input device,Electronic waste,E-waste recycling,mouse
+Speaker,ewaste,Audio device,Battery waste,E-waste recycling,speaker
+Headphones,ewaste,Audio accessory,Plastic waste,E-waste recycling,headphones
+Charger,ewaste,Charging cable,Electronic waste,E-waste recycling,charger
+Router,ewaste,Networking device,E-waste pollution,E-waste recycling,router
+Game Console,ewaste,Gaming device,Mixed materials,E-waste recycling,game console
+Smartwatch,ewaste,Wearable device,Battery waste,E-waste recycling,smartwatch
+Camera,ewaste,Digital device,Toxic waste,E-waste recycling,camera
+Microwave,ewaste,Appliance,Electronic waste,E-waste recycling,microwave
+Refrigerator,ewaste,Appliance,Gas pollution,Authorized recycler,refrigerator
+Air Conditioner,ewaste,Cooling device,Harmful gases,HVAC recycling,air conditioner
+Washing Machine,ewaste,Appliance,Metal/plastic waste,Appliance recycler,washing machine

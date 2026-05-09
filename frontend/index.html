@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>EcoSmart AI — Environmental Monitoring System</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <!-- ── HEADER ── -->
+    <header>
+        <div class="logo-row">
+            <div class="logo-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2.5">
+                    <path d="M12 22V12M12 12C12 6.5 6 3 6 3s0 6.5 6 9zM12 12C12 6.5 18 3 18 3s0 6.5-6 9z" />
+                </svg>
+            </div>
+            <h1>Eco<span>Smart</span> AI</h1>
+        </div>
+        <p class="header-sub">Environmental Monitoring &amp; Intelligence System</p>
+        <div class="status-bar">
+            <span class="status-pill"><span class="status-dot sd-green"></span>Noise Sensors Online</span>
+            <span class="status-pill"><span class="status-dot sd-blue"></span>Bio Sites Active</span>
+            <span class="status-pill"><span class="status-dot sd-amber"></span>Waste Network Live</span>
+        </div>
+    </header>
+
+    <!-- ── TABS ── -->
+    <nav>
+        <button class="tab-btn active" onclick="openTab('home',this)">Home</button>
+        <button class="tab-btn" onclick="openTab('noise',this)">Noise</button>
+        <button class="tab-btn" onclick="openTab('waste',this)">Waste</button>
+        <button class="tab-btn" onclick="openTab('bio',this)">Bioremediation</button>
+        <button class="tab-btn" onclick="openTab('dashboard',this)">Dashboard</button>
+    </nav>
+
+    <!-- ══════════════ HOME ══════════════ -->
+    <div id="home" class="panel active">
+        <div class="grid-3" style="margin-bottom:1.5rem">
+            <div class="stat">
+                <div class="stat-label">Sensors Online</div>
+                <div class="stat-val c-green">128</div>
+                <div class="stat-sub">Across 12 sectors</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Active Bio Sites</div>
+                <div class="stat-val c-blue">7</div>
+                <div class="stat-sub">Remediation in progress</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Waste Diverted</div>
+                <div class="stat-val c-amber">78%</div>
+                <div class="stat-sub">+6% this month</div>
+            </div>
+        </div>
+
+        <div class="hero-grid">
+            <div class="feature-card" onclick="openTabByName('noise')">
+                <div class="feature-icon fi-green">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2">
+                        <path d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0-11V3" />
+                    </svg>
+                </div>
+                <div class="feature-name">Noise Pollution</div>
+                <div class="feature-desc">Predict decibel levels from traffic density, time-of-day, and zone type. Get
+                    mitigation recommendations instantly.</div>
+                <span class="go-link">Analyze →</span>
+            </div>
+            <div class="feature-card" onclick="openTabByName('waste')">
+                <div class="feature-icon fi-blue">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent2)"
+                        stroke-width="2">
+                        <polyline points="3 6 5 6 21 6" />
+                        <path d="M19 6l-1 14H6L5 6M9 6V4h6v2" />
+                    </svg>
+                </div>
+                <div class="feature-name">Smart Waste</div>
+                <div class="feature-desc">Estimate waste output, optimize pickup routes, and track recycling efficiency
+                    across city sectors.</div>
+                <span class="go-link">Analyze →</span>
+            </div>
+            <div class="feature-card" onclick="openTabByName('bio')">
+                <div class="feature-icon fi-amber">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent3)"
+                        stroke-width="2">
+                        <path d="M12 22V12M12 12C12 6.5 6 3 6 3s0 6.5 6 9zM12 12C12 6.5 18 3 18 3s0 6.5-6 9z" />
+                    </svg>
+                </div>
+                <div class="feature-name">Bioremediation</div>
+                <div class="feature-desc">Input contaminant type and get AI-suggested organisms, treatment plans, and
+                    estimated recovery timelines.</div>
+                <span class="go-link">Analyze →</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">System Alerts</div>
+            <div class="alert" style="background:rgba(255,87,87,.05);border-color:rgba(255,87,87,.2)">
+                <div class="alert-dot" style="background:var(--warn)"></div>
+                <div>
+                    <div class="alert-msg">Industrial zone noise exceeded 90 dB — immediate action required</div>
+                    <div class="alert-time">8 min ago</div>
+                </div>
+            </div>
+            <div class="alert" style="background:rgba(255,184,0,.05);border-color:rgba(255,184,0,.2)">
+                <div class="alert-dot" style="background:var(--accent3)"></div>
+                <div>
+                    <div class="alert-msg">Sector C general waste bin at 91% — dispatch en route</div>
+                    <div class="alert-time">34 min ago</div>
+                </div>
+            </div>
+            <div class="alert" style="background:rgba(0,229,160,.05);border-color:rgba(0,229,160,.2)">
+                <div class="alert-dot" style="background:var(--accent)"></div>
+                <div>
+                    <div class="alert-msg">Site B bioremediation milestone reached — 63% soil recovery</div>
+                    <div class="alert-time">2 hr ago</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ══════════════ NOISE ══════════════ -->
+    <div id="noise" class="panel">
+        <div class="grid-2" style="margin-bottom:16px">
+            <div class="card">
+                <div class="card-title">Noise Level Predictor</div>
+                <div class="field-group">
+                    <label>Noise Level (dB)</label>
+                    <input type="number" id="noise-db" placeholder="e.g. 60" min="30" max="120">
+                </div>
+                <div class="field-group">
+                    <label>Traffic Density (vehicles/hr)</label>
+                    <input type="number" id="traffic" placeholder="e.g. 500" min="0" max="5000">
+                </div>
+                <div class="field-group">
+                    <label>Zone Type</label>
+                    <select id="zone-type">
+                        <option value="residential">Residential</option>
+                        <option value="commercial">Commercial</option>
+                        <option value="industrial">Industrial</option>
+                        <option value="park">Park / Green Area</option>
+                    </select>
+                </div>
+                <div class="field-group">
+                    <label>Time of Day</label>
+                    <select id="time-of-day">
+                        <option value="morning">Morning (6am–10am)</option>
+                        <option value="day">Daytime (10am–6pm)</option>
+                        <option value="evening">Evening (6pm–10pm)</option>
+                        <option value="night">Night (10pm–6am)</option>
+                    </select>
+                </div>
+                <button class="btn" onclick="predictNoise()">Run Prediction</button>
+                <div id="noiseResult" class="result-box"></div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Live Zone Monitor</div>
+                <div class="zone-grid">
+                    <div class="zone">
+                        <div class="zone-name">Market St</div>
+                        <div class="zone-val c-red">84 dB</div>
+                        <div class="zone-bar" style="background:#ff5757"></div>
+                    </div>
+                    <div class="zone">
+                        <div class="zone-name">Residential</div>
+                        <div class="zone-val c-green">48 dB</div>
+                        <div class="zone-bar" style="background:var(--accent)"></div>
+                    </div>
+                    <div class="zone">
+                        <div class="zone-name">Industrial</div>
+                        <div class="zone-val c-red">91 dB</div>
+                        <div class="zone-bar" style="background:#ff5757"></div>
+                    </div>
+                    <div class="zone">
+                        <div class="zone-name">Park Zone</div>
+                        <div class="zone-val c-green">38 dB</div>
+                        <div class="zone-bar" style="background:var(--accent)"></div>
+                    </div>
+                </div>
+                <div style="margin-top:1rem">
+                    <div class="card-title" style="margin-bottom:10px">Source Breakdown</div>
+                    <div class="bar-row"><span class="bar-label">Traffic</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width:72%;background:#ff5757"></div>
+                        </div><span class="bar-num">72%</span>
+                    </div>
+                    <div class="bar-row"><span class="bar-label">Construction</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width:18%;background:var(--accent3)"></div>
+                        </div><span class="bar-num">18%</span>
+                    </div>
+                    <div class="bar-row"><span class="bar-label">Commercial</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width:7%;background:var(--accent)"></div>
+                        </div><span class="bar-num">7%</span>
+                    </div>
+                    <div class="bar-row"><span class="bar-label">Other</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width:3%;background:var(--muted)"></div>
+                        </div><span class="bar-num">3%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">Mitigation Roadmap</div>
+            <div class="timeline">
+                <div class="tl-line"></div>
+                <div class="tl-item">
+                    <div class="tl-dot done"></div>
+                    <div class="tl-title">Sound barriers installed — Market St</div>
+                    <div class="tl-desc">Completed · Estimated -8 dB reduction</div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-dot done"></div>
+                    <div class="tl-title">Traffic rerouting — Industrial zone</div>
+                    <div class="tl-desc">Active · -5 dB projected over 30 days</div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-dot"></div>
+                    <div class="tl-title">Green belt planting — Ring Road</div>
+                    <div class="tl-desc">Phase 2 pending · Natural sound absorption</div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-dot"></div>
+                    <div class="tl-title">Smart signal timing — City Centre</div>
+                    <div class="tl-desc">Planned Q3 · Target -12 dB peak hours</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ══════════════ WASTE ══════════════ -->
+    <!-- ══════════════ WASTE (AI RECOMMENDATION) ══════════════ -->
+    <div id="waste" class="panel">
+
+        <!-- ── TOP MINI DASHBOARD ── -->
+        <div class="g4" style="margin-bottom:18px">
+            <div class="stat">
+                <div class="stat-label">Total Bins</div>
+                <div class="stat-val c-g">128</div>
+                <div class="stat-sub">12 sectors</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Diversion Rate</div>
+                <div class="stat-val c-b">78%</div>
+                <div class="stat-sub" style="color:var(--accent)">↑ +6% this month</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Pending Pickup</div>
+                <div class="stat-val c-a">9</div>
+                <div class="stat-sub">Bins at 90%+</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Fuel Saved</div>
+                <div class="stat-val c-g">420 L</div>
+                <div class="stat-sub">This week</div>
+            </div>
+        </div>
+
+        <!-- ── MAIN PANEL (Input + Details) ── -->
+        <div class="g2">
+
+            <!-- INPUT CARD -->
+            <div class="card">
+                <div class="card-title">AI Waste Segregation Advisor</div>
+
+                <div class="field" style="position:relative">
+                    <label>Enter or search a waste item</label>
+                    <input type="text" id="wasteItem" placeholder="e.g. Banana Peel, Plastic Bottle…"
+                        oninput="showSuggestions()" onblur="hideSuggestions()" autocomplete="off">
+                    <div id="suggestions" class="suggestions-box"></div>
+                </div>
+
+                <button class="btn" onclick="predictWaste()" style="width:100%">Analyse &amp; Recommend</button>
+
+                <div id="loader" class="loader" style="display:none">
+                    <div class="loader-dots"><span></span><span></span><span></span></div>
+                    <span>Analysing item…</span>
+                </div>
+
+                <div id="wasteResult" class="result-box"></div>
+
+                <!-- History -->
+                <div style="margin-top:1.4rem">
+                    <div class="card-title" style="margin-bottom:8px">Recent Lookups</div>
+                    <div class="history-list" id="historyList">
+                        <div class="empty-state" style="padding:1rem">
+                            <div class="empty-text">Your search history will appear here.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- OUTPUT DETAIL CARD -->
+            <div class="card">
+                <div class="card-title">Item Analysis</div>
+                <div id="detailEmpty" class="empty-state">
+                    <div class="empty-icon">♻</div>
+                    <div class="empty-text">Search for a waste item to see<br>its full classification and disposal
+                        guide.</div>
+                </div>
+                <div id="detailContent" style="display:none">
+                    <div style="display:flex;align-items:center;gap:12px;margin-bottom:1rem">
+                        <div id="detailEmoji" style="font-size:32px"></div>
+                        <div>
+                            <div id="itemName"
+                                style="font-family:var(--font-d);font-size:.95rem;color:#fff;letter-spacing:.04em">
+                            </div>
+                            <div style="margin-top:5px"><span id="category" class="cat-tag"></span></div>
+                        </div>
+                    </div>
+
+                    <div class="detail-section">
+                        <div class="detail-key">Description</div>
+                        <div class="detail-val" id="description"></div>
+                    </div>
+
+                    <div class="detail-section">
+                        <div class="detail-key">Environmental Impact</div>
+                        <div class="impact-meter" id="impactMeter"></div>
+                    </div>
+
+                    <div class="detail-section">
+                        <div class="detail-key">Best Disposal Methods</div>
+                        <ul class="steps" id="recommendations"></ul>
+                    </div>
+
+                    <div class="detail-section" id="tipSection" style="display:none">
+                        <div class="detail-key">Pro Tip</div>
+                        <div class="detail-val" id="proTip" style="color:var(--accent);font-style:italic"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ── BIN FILL LEVELS ── -->
+        <div class="card" style="margin-bottom:14px">
+            <div class="card-title">Real-time Bin Fill Levels</div>
+            <div class="scanner"></div>
+            <div class="bins-row">
+                <div class="bin-item">
+                    <div class="bin-top">
+                        <div class="bin-icon-box">🟢</div>
+                        <div class="bin-name">Organic</div>
+                        <div class="bin-pct c-g">34%</div>
+                    </div>
+                    <div class="bin-body">
+                        <div class="bin-fill-vis" style="height:34%;background:rgba(0,229,160,.5)"></div>
+                    </div>
+                </div>
+                <div class="bin-item">
+                    <div class="bin-top">
+                        <div class="bin-icon-box">🔵</div>
+                        <div class="bin-name">Recyclable</div>
+                        <div class="bin-pct c-b">67%</div>
+                    </div>
+                    <div class="bin-body">
+                        <div class="bin-fill-vis" style="height:67%;background:rgba(0,180,255,.5)"></div>
+                    </div>
+                </div>
+                <div class="bin-item">
+                    <div class="bin-top">
+                        <div class="bin-icon-box">🟡</div>
+                        <div class="bin-name">General</div>
+                        <div class="bin-pct c-a">91%</div>
+                    </div>
+                    <div class="bin-body">
+                        <div class="bin-fill-vis" style="height:91%;background:rgba(255,184,0,.6)"></div>
+                    </div>
+                </div>
+                <div class="bin-item">
+                    <div class="bin-top">
+                        <div class="bin-icon-box">🔴</div>
+                        <div class="bin-name">Hazardous</div>
+                        <div class="bin-pct c-r">22%</div>
+                    </div>
+                    <div class="bin-body">
+                        <div class="bin-fill-vis" style="height:22%;background:rgba(255,87,87,.5)"></div>
+                    </div>
+                </div>
+                <div class="bin-item">
+                    <div class="bin-top">
+                        <div class="bin-icon-box">🟠</div>
+                        <div class="bin-name">E-Waste</div>
+                        <div class="bin-pct c-a">48%</div>
+                    </div>
+                    <div class="bin-body">
+                        <div class="bin-fill-vis" style="height:48%;background:rgba(255,184,0,.35)"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ── MINI DASHBOARDS ROW ── -->
+        <div class="g3" style="margin-bottom:14px">
+
+            <!-- Chart 1: weekly collection -->
+            <div class="card">
+                <div class="card-title">Weekly Collection (tons)</div>
+                <div class="chart-wrap"><canvas id="collectionChart"></canvas></div>
+            </div>
+
+            <!-- Chart 2: category split -->
+            <div class="card">
+                <div class="card-title">Category Split</div>
+                <div class="chart-wrap"><canvas id="categoryChart"></canvas></div>
+            </div>
+
+            <!-- Route Efficiency -->
+            <div class="card">
+                <div class="card-title">Route Efficiency</div>
+                <div style="margin-top:6px">
+                    <div class="bar-row"><span class="bar-label">Sector A</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width:80%;background:var(--accent2)"></div>
+                        </div><span class="bar-num">80%</span>
+                    </div>
+                    <div class="bar-row"><span class="bar-label">Sector B</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width:55%;background:var(--accent2)"></div>
+                        </div><span class="bar-num">55%</span>
+                    </div>
+                    <div class="bar-row"><span class="bar-label">Sector C</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width:92%;background:var(--warn)"></div>
+                        </div><span class="bar-num">92%</span>
+                    </div>
+                    <div class="bar-row"><span class="bar-label">Sector D</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width:38%;background:var(--accent)"></div>
+                        </div><span class="bar-num">38%</span>
+                    </div>
+                    <div class="bar-row"><span class="bar-label">Sector E</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width:71%;background:var(--accent2)"></div>
+                        </div><span class="bar-num">71%</span>
+                    </div>
+                </div>
+                <div style="margin-top:12px;padding-top:10px;border-top:1px solid var(--border)">
+                    <div
+                        style="font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:4px">
+                        Trucks Active</div>
+                    <div style="font-family:var(--font-d);font-size:1.3rem;font-weight:800;color:var(--accent)">14 <span
+                            style="font-size:.6rem;color:var(--muted)">/ 20</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ── ALERTS + RECYCLING TREND ── -->
+        <div class="g2">
+            <div class="card">
+                <div class="card-title">Live Alerts</div>
+                <div class="alert" style="background:rgba(255,87,87,.05);border-color:rgba(255,87,87,.2)">
+                    <div class="alert-dot" style="background:var(--warn)"></div>
+                    <div>
+                        <div class="alert-msg">Sector C general bin at 91% — dispatch en route</div>
+                        <div class="alert-time">12 min ago</div>
+                    </div>
+                </div>
+                <div class="alert" style="background:rgba(255,184,0,.05);border-color:rgba(255,184,0,.2)">
+                    <div class="alert-dot" style="background:var(--accent3)"></div>
+                    <div>
+                        <div class="alert-msg">Recyclable bin at Market St — 84% filled</div>
+                        <div class="alert-time">29 min ago</div>
+                    </div>
+                </div>
+                <div class="alert" style="background:rgba(0,229,160,.05);border-color:rgba(0,229,160,.2)">
+                    <div class="alert-dot" style="background:var(--accent)"></div>
+                    <div>
+                        <div class="alert-msg">Composting target reached — Sector B organic</div>
+                        <div class="alert-time">2 hr ago</div>
+                    </div>
+                </div>
+                <div class="alert" style="background:rgba(0,180,255,.05);border-color:rgba(0,180,255,.2)">
+                    <div class="alert-dot" style="background:var(--accent2)"></div>
+                    <div>
+                        <div class="alert-msg">Route optimisation saved 3.2 hrs today</div>
+                        <div class="alert-time">4 hr ago</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Recycling Rate — 6 Months</div>
+                <div class="chart-wrap"><canvas id="recycleChart"></canvas></div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <!-- ══════════════ BIOREMEDIATION ══════════════ -->
+    <div id="bio" class="panel">
+        <div class="grid-2" style="margin-bottom:16px">
+            <div class="card">
+                <div class="card-title">Remediation Advisor</div>
+                <div class="field-group">
+                    <label>Contaminant Type</label>
+                    <select id="pollutant">
+                        <option value="">-- Select contaminant --</option>
+                        <option value="heavy_metals">Heavy Metals (Lead, Mercury)</option>
+                        <option value="hydrocarbons">Hydrocarbons / Oil Spill</option>
+                        <option value="pesticides">Pesticides / Herbicides</option>
+                        <option value="nitrates">Nitrates / Phosphates</option>
+                        <option value="plastics">Microplastics</option>
+                        <option value="solvents">Chlorinated Solvents</option>
+                    </select>
+                </div>
+                <div class="field-group">
+                    <label>Contamination Level</label>
+                    <select id="contam-level">
+                        <option value="low">Low (surface trace)</option>
+                        <option value="medium">Medium (0.5–2m depth)</option>
+                        <option value="high">High (deep penetration)</option>
+                    </select>
+                </div>
+                <div class="field-group">
+                    <label>Site Moisture</label>
+                    <select id="moisture">
+                        <option value="dry">Dry</option>
+                        <option value="moist">Moist</option>
+                        <option value="saturated">Saturated / Waterlogged</option>
+                    </select>
+                </div>
+                <button class="btn" onclick="predictBio()">Get Treatment Plan</button>
+                <div id="bioResult" class="result-box"></div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Active Remediation Sites</div>
+                <div class="scanner"></div>
+                <div class="timeline">
+                    <div class="tl-line"></div>
+                    <div class="tl-item">
+                        <div class="tl-dot done"></div>
+                        <div class="tl-title">Site A — North Field</div>
+                        <div class="tl-desc">Bacterial seeding complete · 87% recovered</div>
+                    </div>
+                    <div class="tl-item">
+                        <div class="tl-dot done"></div>
+                        <div class="tl-title">Site B — River Bank</div>
+                        <div class="tl-desc">Fungal inoculation active · 63% recovered</div>
+                    </div>
+                    <div class="tl-item">
+                        <div class="tl-dot done"></div>
+                        <div class="tl-title">Site C — Industrial Plot</div>
+                        <div class="tl-desc">Phytoremediation in progress · 45%</div>
+                    </div>
+                    <div class="tl-item">
+                        <div class="tl-dot"></div>
+                        <div class="tl-title">Site D — Wetland Reserve</div>
+                        <div class="tl-desc">Setup Q3 · Mycoremediation planned</div>
+                    </div>
+                </div>
+                <div style="margin-top:1rem">
+                    <div class="card-title" style="margin-bottom:8px">Clearance by Contaminant</div>
+                    <div class="bar-row"><span class="bar-label">Heavy metals</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width:58%;background:var(--accent)"></div>
+                        </div><span class="bar-num">58%</span>
+                    </div>
+                    <div class="bar-row"><span class="bar-label">Hydrocarbons</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width:74%;background:var(--accent)"></div>
+                        </div><span class="bar-num">74%</span>
+                    </div>
+                    <div class="bar-row"><span class="bar-label">Pesticides</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width:41%;background:var(--accent3)"></div>
+                        </div><span class="bar-num">41%</span>
+                    </div>
+                    <div class="bar-row"><span class="bar-label">Nitrates</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width:82%;background:var(--accent)"></div>
+                        </div><span class="bar-num">82%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ══════════════ DASHBOARD ══════════════ -->
+    <div id="dashboard" class="panel">
+        <!-- Overview Stats -->
+        <div class="grid-3">
+            <div class="stat">
+                <div class="stat-label">Average Noise</div>
+                <div class="stat-value" style="color:var(--red)">72 dB</div>
+            </div>
+
+            <div class="stat">
+                <div class="stat-label">Waste Diversion</div>
+                <div class="stat-value" style="color:var(--green)">78%</div>
+            </div>
+
+            <div class="stat">
+                <div class="stat-label">Soil Recovery</div>
+                <div class="stat-value" style="color:var(--blue)">63%</div>
+            </div>
+        </div>
+
+        <!-- Main Charts -->
+        <div class="grid-2">
+            <div class="card">
+                <div class="card-title">Weekly Noise Trend</div>
+                <div class="chart-wrap">
+                    <canvas id="noiseChart"></canvas>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Waste Categories</div>
+                <div class="chart-wrap">
+                    <canvas id="wasteChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bioremediation -->
+        <div class="card">
+            <div class="card-title">Bioremediation Progress</div>
+            <div class="chart-wrap">
+                <canvas id="bioChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── SCRIPT ── -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
